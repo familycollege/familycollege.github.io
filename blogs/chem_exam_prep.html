@@ -8,21 +8,38 @@
   <style>
     /* Document-like styles */
     body {
-      font-family: 'Times New Roman', Times, serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
-    }
-    .document {
-      width: 8.5in;
-      min-height: 11in;
-      padding: 1in;
-      margin: 20px auto;
-      background-color: white;
-      border: 1px solid #ccc;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-      page-break-after: always;
-    }
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.document {
+  width: 90%; /* Adjust to 90% of the screen width */
+  min-height: 100vh; /* Ensure it fills the height of the viewport */
+  padding: 5%; /* Relative padding to allow flexibility */
+  margin: 20px auto;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .document {
+    width: 95%; /* Take more of the screen on smaller devices */
+    padding: 3%; /* Reduce padding on smaller screens */
+    margin: 10px auto; /* Adjust margin for smaller devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .document {
+    width: 100%; /* Full width for mobile devices */
+    padding: 2%; /* Further reduce padding on small screens */
+    margin: 5px auto; /* Minimal margin for very small devices */
+  }
+}
+
     h1, h2, h3 {
       font-family: 'Times New Roman', Times, serif;
     }
