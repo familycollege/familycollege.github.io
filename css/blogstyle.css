@@ -1,0 +1,161 @@
+/* Global Styles */
+body {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Main Content Area */
+  .container {
+    width: 90%; /* Adjust to 90% of the screen width */
+    min-height: 100vh; /* Ensure it fills the height of the viewport */
+    padding: 5%; /* Relative padding to allow flexibility */
+    margin: 20px auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Times New Roman', Times, serif;
+  }
+  h1 {
+    font-size: 24pt;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 18pt;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-size: 16pt;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 12pt;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  /* Ensure header and footer styles don't stand out */
+  header, footer {
+    text-align: center;
+    font-size: 12pt;
+    font-style: italic;
+  }
+  footer {
+    margin-top: 50px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+  }
+  /* Page break for printing */
+  @media print {
+    body {
+      background-color: white;
+    }
+    .document {
+      box-shadow: none;
+      border: none;
+    }
+  }
+  
+  blockquote {
+    font-style: italic;
+    padding: 10px 20px;
+    border-left: 3px solid #ccc;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+  }
+  
+  a {
+    color: #0056b3;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Lists */
+  ul, ol {
+    padding-left: 40px;
+    margin-bottom: 20px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  /* Images */
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 5px;
+  }
+  
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  /* Code Blocks */
+  pre, code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #666;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    h3 {
+      font-size: 20px;
+    }
+  
+    p, li {
+      font-size: 15px;
+    }
+  }
+  
